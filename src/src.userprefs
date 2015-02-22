@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js">
+    <Files>
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="34" Column="3" />
+      <File FileName="Assets\sunOrbit.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Particle FX\ReflectionWater.shader" Line="1" Column="1" />
+      <File FileName="Assets\NextLevel.cs" Line="11" Column="36" />
+      <File FileName="Assets\hintText.cs" Line="34" Column="23" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="462" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
