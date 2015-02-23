@@ -9,7 +9,6 @@ public class NextLevel : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider other){
-		Debug.Log ("BOOM");
 		int i = Application.loadedLevel;
 		Application.LoadLevel (i + 1);
 	}
