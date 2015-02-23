@@ -1,38 +1,50 @@
-Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
-    Vendor:   Intel
-    VRAM:     2077 MB
+    Renderer: AMD Radeon HD 6900 Series (ID=0x6719)
+    Vendor:   ATI
+    VRAM:     2030 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.122 seconds
-desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+Platform assembly: C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.048 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\System.Core.dll (this message is harmless)
 WARNING: Shader Unsupported: 'Toon/Basic Outline' - Pass 'OUTLINE' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-Platform assembly: C:\Users\Kvlt Kitty\Documents\GameJams\atmosphereExperiment\src\test_Data\Managed\Boo.Lang.dll (this message is harmless)
-BOOM
+Platform assembly: C:\Users\Jesse\Documents\GitHub\atmosphereExperiment\src\test_Data\Managed\Boo.Lang.dll (this message is harmless)
+Destroy
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Destroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Destroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Destroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
 WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Leaves Optimized' - Pass '' shader state not supported
-UnloadTime: 2.167478 ms
+UnloadTime: 1.067339 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 234.
-Total: 17.119562 ms (FindLiveObjects: 0.052894 ms CreateObjectMapping: 0.018947 ms MarkObjects: 0.168550 ms  DeleteObjects: 15.638132 ms)
+Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 264.
+Total: 4.990548 ms (FindLiveObjects: 0.012296 ms CreateObjectMapping: 0.010452 ms MarkObjects: 0.110361 ms  DeleteObjects: 4.526969 ms)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported

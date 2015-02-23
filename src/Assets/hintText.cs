@@ -1,15 +1,37 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Text;
 
 public class hintText : MonoBehaviour {
+	public class TextInfo {
+		public char[] text;
+		public float alphaCurrent; //use to tell when current letter has reached point to begin fading in next letter
+		public int curChar;
 
+		public float alphaGap; //gap between beginning to fade in each character
 
+		//setup to allow you to iterate through a list and fade in one character at a time
+	}
+
+	public bool oneAtTime;
+
+	public TextInfo _text;
+	public float alphaGap;
+	public float speed;
 	bool hitBox;
 	bool fadeIn;
 	Color color;
 	GUIStyle myStyle;
 	
 	void Start(){
+		if(oneAtTime)
+		{
+			_text.text = transform.guiText.text.ToCharArray ();
+			_text.alphaCurrent = 0.0f;
+			_text.curChar = 0;
+			_text.alphaGap = alphaGap;
+
+		}
 		hitBox = false;
 		fadeIn = true;
 		guiText.enabled = false;
@@ -20,16 +42,34 @@ public class hintText : MonoBehaviour {
 	
 	void Update(){
 
-		if(hitBox){
+		if(hitBox && !oneAtTime)
+		{
 			Fade();
+		}
+		else if(hitBox && oneAtTime)
+		{
+			FadeOne();
 		}
 	}
 
 
 	void OnGUI(){
-		if(hitBox){
+		if(hitBox && !oneAtTime){
+			if(!fadeIn && color.a <= 0.0f){
+				Debug.Log ("Destroy");
+				Destroy (gameObject);
+			}
 			guiText.material.color = color;
 			guiText.enabled = true;
+		}
+		else if(hitBox &&oneAtTime){
+			StringBuilder _cur = new StringBuilder();
+			for(int i = 0; i < _text.curChar; i++)
+			{
+
+			}
+
+
 		}
 	}
 	void OnTriggerEnter(Collider other){
@@ -58,5 +98,21 @@ public class hintText : MonoBehaviour {
 				fadeIn = false;
 			}
 		}
+	}
+
+	void FadeOne()
+	{
+		if(_text.curChar == 0)
+		{
+			if(_text.alphaCurrent >= _text.alphaGap){
+				if(_text.curChar + 1 < _text.text.Length)
+				{
+					_text.curChar++;
+					_text.alphaCurrent = 0.0f;
+				}
+			}
+
+		}
+
 	}
 }
