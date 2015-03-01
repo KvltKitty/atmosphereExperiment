@@ -2,22 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\hintText.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\hintText.cs" Line="18" Column="3" />
-      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="1" Column="1" />
-      <File FileName="Assets\sunOrbit.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Particle FX\ReflectionWater.shader" Line="1" Column="1" />
-      <File FileName="Assets\NextLevel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="1" Column="1" />
-=======
-      <File FileName="Assets\rotateObject.cs" Line="14" Column="62" />
-      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="34" Column="3" />
-      <File FileName="Assets\sunOrbit.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Particle FX\ReflectionWater.shader" Line="1" Column="1" />
-      <File FileName="Assets\NextLevel.cs" Line="16" Column="1" />
-      <File FileName="Assets\hintText.cs" Line="31" Column="35" />
-      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="462" Column="27" />
->>>>>>> origin/master
+      <File FileName="Assets\hintText.cs" Line="25" Column="62" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -15,13 +15,20 @@ public class hintText : MonoBehaviour {
 
 	public bool oneAtTime;
 
+
 	public TextInfo _text;
 	public float alphaGap;
 	public float speed;
-	bool hitBox;
-	bool fadeIn;
-	Color color;
-	GUIStyle myStyle;
+	private float _ratio;  //store ratio, calculate at start based on number letters and the alpha gap between
+							//this will tell you when to begin fading out beginning of string
+
+	//_fadeInKey and _keyAlpha are derived from the found _ratio
+	private int _fadeInKey; //Key which tells it when to begin fading in
+	private float _keyAlpha;  //alpha of key when to begin fading in
+	private bool hitBox;
+	private bool fadeIn;
+	private Color color;
+	private GUIStyle myStyle;
 	
 	void Start(){
 		if(oneAtTime)
@@ -48,7 +55,7 @@ public class hintText : MonoBehaviour {
 		}
 		else if(hitBox && oneAtTime)
 		{
-			FadeOne();
+			FadeOneIn();
 		}
 	}
 
@@ -80,12 +87,11 @@ public class hintText : MonoBehaviour {
 	}
 	void Fade(){
 		if(!fadeIn){
-		if (transform.guiText.material.color.a > 0){
-			color = transform.guiText.material.color;
-			color.a -= 0.1f* Time.deltaTime;
-			transform.guiText.material.color = color;
-
-		}
+			if (transform.guiText.material.color.a > 0){
+				color = transform.guiText.material.color;
+				color.a -= 0.1f* Time.deltaTime;
+				transform.guiText.material.color = color;
+			}
 		}
 		else if(fadeIn){
 			if (transform.guiText.material.color.a < 1){
@@ -100,7 +106,7 @@ public class hintText : MonoBehaviour {
 		}
 	}
 
-	void FadeOne()
+	void FadeOneIn()
 	{
 		if(_text.curChar == 0)
 		{
@@ -113,6 +119,11 @@ public class hintText : MonoBehaviour {
 			}
 
 		}
+
+	}
+	void FadeOneOut()
+	{
+
 
 	}
 }
