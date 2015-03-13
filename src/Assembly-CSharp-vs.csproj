@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\$OceanSceneAssets\Floater.cs" />
      <Compile Include="Assets\$OceanSceneAssets\Ocean.cs" />
+     <Compile Include="Assets\$OceanSceneAssets\WaterSimple.cs" />
+     <Compile Include="Assets\$SpaceSceneAssets\SmoothFollow.cs" />
      <Compile Include="Assets\NextLevel.cs" />
      <Compile Include="Assets\hintText.cs" />
      <Compile Include="Assets\rotateObject.cs" />
