@@ -27,7 +27,7 @@ public class Floater : MonoBehaviour {
 		float waterHeight = ocean.GetHeightAtLocation(p.x, p.z);
 		Vector3 waterNormal = ocean.GetNormalAtLocation(p.x, p.z);
 		float forceFactor = Mathf.Clamp(1f - (p.y - waterHeight) / MaxDistance, 0, 1);
-		transform.parent.rigidbody.AddForceAtPosition(waterNormal * forceFactor * LiftAcceleration * Body.mass, p);
+		transform.parent.GetComponent<Rigidbody>().AddForceAtPosition(waterNormal * forceFactor * LiftAcceleration * Body.mass, p);
 		
 		if (!Debug.isDebugBuild)
 			return;

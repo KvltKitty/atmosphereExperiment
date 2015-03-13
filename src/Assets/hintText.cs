@@ -33,7 +33,7 @@ public class hintText : MonoBehaviour {
 	void Start(){
 		if(oneAtTime)
 		{
-			_text.text = transform.guiText.text.ToCharArray ();
+			_text.text = transform.GetComponent<GUIText>().text.ToCharArray ();
 			_text.alphaCurrent = 0.0f;
 			_text.curChar = 0;
 			_text.alphaGap = alphaGap;
@@ -41,10 +41,10 @@ public class hintText : MonoBehaviour {
 		}
 		hitBox = false;
 		fadeIn = true;
-		guiText.enabled = false;
-		color = transform.guiText.color;
+		GetComponent<GUIText>().enabled = false;
+		color = transform.GetComponent<GUIText>().color;
 		color.a = 0;
-		transform.guiText.material.color = color;
+		transform.GetComponent<GUIText>().material.color = color;
 	}
 	
 	void Update(){
@@ -66,8 +66,8 @@ public class hintText : MonoBehaviour {
 				Debug.Log ("Destroy");
 				Destroy (gameObject);
 			}
-			guiText.material.color = color;
-			guiText.enabled = true;
+			GetComponent<GUIText>().material.color = color;
+			GetComponent<GUIText>().enabled = true;
 		}
 		else if(hitBox &&oneAtTime){
 			StringBuilder _cur = new StringBuilder();
@@ -87,20 +87,20 @@ public class hintText : MonoBehaviour {
 	}
 	void Fade(){
 		if(!fadeIn){
-			if (transform.guiText.material.color.a > 0){
-				color = transform.guiText.material.color;
+			if (transform.GetComponent<GUIText>().material.color.a > 0){
+				color = transform.GetComponent<GUIText>().material.color;
 				color.a -= 0.1f* Time.deltaTime;
-				transform.guiText.material.color = color;
+				transform.GetComponent<GUIText>().material.color = color;
 			}
 		}
 		else if(fadeIn){
-			if (transform.guiText.material.color.a < 1){
-				color = transform.guiText.material.color;
+			if (transform.GetComponent<GUIText>().material.color.a < 1){
+				color = transform.GetComponent<GUIText>().material.color;
 				color.a += 0.1f* Time.deltaTime;
-				transform.guiText.material.color = color;
+				transform.GetComponent<GUIText>().material.color = color;
 				
 			}
-			if(transform.guiText.material.color.a >= 1.0f){
+			if(transform.GetComponent<GUIText>().material.color.a >= 1.0f){
 				fadeIn = false;
 			}
 		}
